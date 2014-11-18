@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Think Java</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%- @getBlock("meta").toHTML() %>
+	<link rel="shortcut icon" href="/images/logo2.png"/>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700italic,700' rel='stylesheet' type='text/css'>
+	<link href="css/main.css" rel="stylesheet">
+	<%- @getBlock("styles").toHTML() %>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<%- @getBlock("scripts").add(@site.scripts).toHTML() %>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="logo-wrap">
+				<a class="logo"><img src="images/logo.png" alt=""/></a>
+			</div><!-- logo-wrap -->
+			<ul class="social-icons">
+				<li><a class="fa fa-twitter" href="#"></a></li>
+				<li><a class="fa fa-google-plus" href="#"></a></li>
+				<li><a class="fa fa-dribbble" href="#"></a></li>
+				<li><a class="fa fa-facebook" href="#"></a></li>
+				<li><a class="fa fa-instagram" href="#"></a></li>
+				<li><a class="fa fa-vk" href="#"></a></li>
+				<li><a class="fa fa-youtube" href="#"></a></li>
+				<li><a class="fa fa-rss" href="#"></a></li>
+			</ul><!-- social-icons -->
+		</div><!-- container -->
+		<div class="header-bottom clearfix">
+			<div class="container">
+				<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div><!-- navbar-header -->
+                        <!--  # # # # # #  <%=@document.isHome%>  # # # # # # # # -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav pull-left">
+							<li>
+								<a <%-if @document.isHome then 'class="active"' else ''%> href="/">Главная</a>
+							</li>
+							<li>
+								<a href="http://www.meetup.com/thinkjava/events/211924932/">Регистрация</a>
+							</li>
+							<li>
+								<a <%-if @document.isIdeas then 'class="active"' else ''%> href="/ideas/">Идеи и планы</a>
+							</li>
+							<li>
+								<a <%-if @document.isArchive then 'class="active"' else ''%> href="/archive/">Архив</a>
+							</li>
+							<li>
+								<a <%-if @document.isContacts then 'class="active"' else ''%> href="/contacts">Контакты</a>
+							</li>
+							<li>
+								<a <%-if @document.isMap then 'class="active"' else ''%> href="/map">Как найти</a>
+							</li>
+						</ul><!-- nav pull-left -->
+						<!--
+						<button type="button" class="btn search-btn pull-right">
+							<i class="fa fa-search"></i>
+						</button><!-- button -->
+					</div><!-- collapse -->
+				</nav><!-- navbar -->
+			</div><!-- header-bottom -->
+		</div><!-- header-bottom -->
+	</header><!-- header -->
+	<div class="main-content">
+		<%- @content %>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-sm-4">
+						<!--
+						<h3>Contacts</h3>
+						<p>
+							937-99-92<br>
+							г.Чугуев, ул. Ленина 25
+						</p>
+							-->
+					</div><!-- col-lg-4 col-sm-4 -->
+					<div class="col-lg-4 col-sm-4">
+					<div class="menu-socials-container"><ul class="menu" id="menu-socials-1"><li class="fa-vk menu-item menu-item-type-custom menu-item-object-custom menu-item-93"><a href="https://vk.com/thinkjava">ВКонтакте</a></li>
+<li class="fa-twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-69"><a href="https://twitter.com/Think_Java">Twitter</a></li>
+<li class="fa-google-plus menu-item menu-item-type-custom menu-item-object-custom menu-item-70"><a href="https://plus.google.com/u/0/b/116870200058856686282/116870200058856686282/posts">Google+</a></li>
+<li class="fa-facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-71"><a href="https://www.facebook.com/thinkjavaKharkiv">Facebook</a></li>
+<li class="fa-youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-72"><a href="https://www.youtube.com/user/thinkjavakharkiv">Youtube</a></li>
+<li class="fa-rss menu-item menu-item-type-custom menu-item-object-custom menu-item-73"><a href="/feed/">RSS</a></li>
+</ul></div></div>
+					<div class="col-lg-4 col-sm-4">
+						<h3>Additional info</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis deserunt enim, laboriosam fugiat molestiae veniam ipsam repudiandae qui praesentium. Dicta?</p>
+					</div><!-- col-lg-4 col-sm-4 -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</footer><!-- footer -->
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						&copy; NIX Solutions Ltd <%- (new Date()).getFullYear() %>
+					</div><!-- col-lg-12 -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- footer-bottom -->
+	</div><!-- main-content -->
+<!-- <script src="js/main.js"></script> -->
+	<%- @getBlock("scripts").toHTML() %>
+</body>
+</html>
