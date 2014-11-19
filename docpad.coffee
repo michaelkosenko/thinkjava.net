@@ -1,7 +1,7 @@
 docpadConfig = {
     templateData:
         site:
-            url: "http://localhost:9778"
+            url: "http://michaelkosenko.github.io/thinkjava.net"
             title: "ThinkJava - сообщество харьковских java разработчиков"
             keywords: "java, development"
             description: ""
