@@ -1,0 +1,25 @@
+---
+layout: main
+---
+
+	<div class="container">
+        <div class="row">
+            <div class="page-wrapper">
+
+                <div class="blog-wrapper">
+                    <div class="page-wrapper__content">						
+                                    <h1 class="page-wrapper__title">
+                                        <%=@document.title%>
+                                    </h1>
+                                    <div class="entry">
+                                        <%- @content %>
+                                    </div>
+                                    <div class="post-meta-bottom">
+                                        <p class="the_tags"></p>
+                                    </div>
+                            </div>
+                </div>
+
+            </div>
+        </div>
+    </div>

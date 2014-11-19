@@ -1,0 +1,29 @@
+---
+layout: main
+isArchive: true
+---
+
+		<div class="container">
+<% for post in @getCollection("archive").toJSON(): %>
+			<div class="row ">
+				<div class="blog-wrapper clearfix">
+					<div class="code col-lg-8 col-sm-6">
+						<div class="big-img-wrap">
+							<img src="<%- @site.url + post.postimage%>" width="100%">
+						</div>
+					</div><!-- col-lg-8 -->
+					<div class="blog col-lg-4 col-sm-6">
+						<h2><%- post.title%></h2>
+						<p>
+							<%- @getCuttedContent(String(post.contentRenderedWithoutLayouts))%>
+						</p>
+						<% if @hasReadMore(String(post.contentRenderedWithoutLayouts)): %>
+						<a class="btn-read" href="<%=post.url%>">
+							Read More
+						</a><!-- btn-read -->
+						<% end %>
+					</div><!-- col-lg-4 -->
+				</div><!-- blog-wrapper -->
+			</div><!-- row -->
+<% end %>
+		</div><!-- container -->
