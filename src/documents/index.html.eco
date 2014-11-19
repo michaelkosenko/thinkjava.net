@@ -9,7 +9,7 @@ isHome: true
 				<div class="blog-wrapper clearfix">
 					<div class="code col-lg-8 col-sm-6">
 						<div class="big-img-wrap">
-							<img src="images/java-code.jpg" alt="">
+							<img src="<%- @site.url + post.postimage%>" width="100%">
 						</div>
 					</div><!-- col-lg-8 -->
 					<div class="blog col-lg-4 col-sm-6">
@@ -22,14 +22,6 @@ isHome: true
 							Read More
 						</a><!-- btn-read -->
 						<% end %>
-						<div class="arrows-wrap pull-right">
-							<a class="arrow-left" href="#">
-								<i class="fa fa-caret-left"></i>
-							</a>
-							<a class="arrow-right" href="#">
-								<i class="fa fa-caret-right"></i>
-							</a>
-						</div><!-- arrows-wrap -->
 					</div><!-- col-lg-4 -->
 				</div><!-- blog-wrapper -->
 			</div><!-- row -->

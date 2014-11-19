@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "docpad": "~6.69.1",
+    "docpad-plugin-cleanurls": "~2.7.0",
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-ghpages": "~2.4.3",
     "docpad-plugin-livereload": "~2.6.0",
-    "docpad-plugin-multimarkdown": "~2.0.0"
+    "docpad-plugin-multimarkdown": "~2.0.0",
+    "docpad-plugin-rss": "~2.1.4"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {

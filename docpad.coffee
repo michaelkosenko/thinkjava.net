@@ -1,7 +1,7 @@
 docpadConfig = {
     templateData:
         site:
-            url: "http://thinkjava.net"
+            url: "http://localhost:9778"
             title: "ThinkJava - сообщество харьковских java разработчиков"
             keywords: "java, development"
             description: ""
@@ -33,6 +33,16 @@ docpadConfig = {
     collections:
         posts: (database) ->
             database.findAllLive({type:$has:'blog'}, [date: -1])
+        archive: (database) ->
+            database.findAllLive({archived:true}, [date: -1])
+            
+    plugins:
+        cleanurls:
+            static: true
+        rss:
+            default:
+              collection: 'posts'
+              url: '/rss.xml'
     
 }
 
