@@ -19,7 +19,7 @@ isHome: true
 						</p>
 						<% if @hasReadMore(String(post.contentRenderedWithoutLayouts)): %>
 						<a class="btn-read" href="<%=@site.url + post.url%>">
-							Read More
+							Читать дальше
 						</a><!-- btn-read -->
 						<% end %>
 					</div><!-- col-lg-4 -->

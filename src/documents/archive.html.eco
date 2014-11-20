@@ -18,8 +18,8 @@ isArchive: true
 							<%- @getCuttedContent(String(post.contentRenderedWithoutLayouts))%>
 						</p>
 						<% if @hasReadMore(String(post.contentRenderedWithoutLayouts)): %>
-						<a class="btn-read" href="<%-@site.url + '/' + post.url%>">
-							Read More
+						<a class="btn-read" href="<%-@site.url + post.url%>">
+							Читать дальше
 						</a><!-- btn-read -->
 						<% end %>
 					</div><!-- col-lg-4 -->
