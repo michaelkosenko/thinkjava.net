@@ -18,7 +18,7 @@ isHome: true
 							<%- @getCuttedContent(String(post.contentRenderedWithoutLayouts))%>
 						</p>
 						<% if @hasReadMore(String(post.contentRenderedWithoutLayouts)): %>
-						<a class="btn-read" href="<%=@site.url + post.url%>">
+						<a class="btn-read" href="<%=@site.url + '/' + post.url%>">
 							Read More
 						</a><!-- btn-read -->
 						<% end %>

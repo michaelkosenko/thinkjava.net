@@ -12,6 +12,7 @@
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-ghpages": "~2.4.3",
     "docpad-plugin-livereload": "~2.6.0",
+    "docpad-plugin-moment": "~2.0.2",
     "docpad-plugin-multimarkdown": "~2.0.0",
     "docpad-plugin-rss": "~2.1.4"
   },

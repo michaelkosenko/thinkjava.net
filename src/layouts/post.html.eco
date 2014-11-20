@@ -13,7 +13,7 @@ layout: main
                                         <%=@document.title%>
                                     </h1>
                                     <div class="post-meta-date">
-										<span class="fa fa-clock-o"></span> <%=@document.date%> 
+										<span class="fa fa-clock-o"></span> <%= @document.humanDate %>
 										&nbsp;&nbsp;
 										<span class="fa fa-comments"></span>Коментариев: <a href="#respond" class="comments">0</a>
 									</div>

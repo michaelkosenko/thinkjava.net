@@ -41,8 +41,15 @@ docpadConfig = {
             static: true
         rss:
             default:
-              collection: 'posts'
-              url: '/rss.xml'
+                  collection: 'posts'
+                  url: '/rss.xml'
+              
+		moment:
+			lang: 'ru'
+			formats: [
+				{raw: 'date', format: 'DD.MM.YYYY', formatted: 'humanDate'}
+				{raw: 'date', format: 'DD-MM-YYYY', formatted: 'computerDate'}
+			]
     
 }
 
