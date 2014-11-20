@@ -1,7 +1,7 @@
 docpadConfig = {
     templateData:
         site:
-            url: "http://michaelkosenko.github.io/thinkjava.net"
+            url: "http://thinkjava.net"
             title: "ThinkJava - сообщество харьковских java разработчиков"
             keywords: "java, development"
             description: ""
@@ -50,6 +50,12 @@ docpadConfig = {
                 {raw: 'date', format: 'DD.MM.YYYY', formatted: 'humanDate'}
                 {raw: 'date', format: 'DD-MM-YYYY', formatted: 'computerDate'}
             ]
+
+        sitemap:
+            cachetime: 600000
+            changefreq: 'weekly'
+            priority: 0.5
+            filePath: 'sitemap.xml'
     
 }
 
