@@ -44,12 +44,12 @@ docpadConfig = {
                   collection: 'posts'
                   url: '/rss.xml'
               
-		moment:
-			lang: 'ru'
-			formats: [
-				{raw: 'date', format: 'DD.MM.YYYY', formatted: 'humanDate'}
-				{raw: 'date', format: 'DD-MM-YYYY', formatted: 'computerDate'}
-			]
+        moment:
+            lang: 'ru'
+            formats: [
+                {raw: 'date', format: 'DD.MM.YYYY', formatted: 'humanDate'}
+                {raw: 'date', format: 'DD-MM-YYYY', formatted: 'computerDate'}
+            ]
     
 }
 
