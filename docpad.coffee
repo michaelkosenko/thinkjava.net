@@ -56,7 +56,15 @@ docpadConfig = {
             changefreq: 'weekly'
             priority: 0.5
             filePath: 'sitemap.xml'
-    
+    environments:
+        static:
+            templateData:
+                site:
+                    url: "http://thinkjava.net"
+        development:
+            templateData:
+                site:
+                    url: "http://localhost:9778"
 }
 
 module.exports = docpadConfig
