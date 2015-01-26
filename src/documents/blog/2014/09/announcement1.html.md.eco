@@ -1,10 +1,11 @@
 ---
-type: blog
+type: page
 title: Анонс ThinkJava #1
 url: /announcement1
 layout: post
 date: 2014-09-19
 postimage: /images/2014/09/Duke_v2-1024x559.png
+archived: true
 ---
 
 14 ноября состоится первая Java конференция от NIX Solutions. На конференции будут рассматриваться 
