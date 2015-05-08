@@ -4,7 +4,7 @@ isHome: true
 ---
 
 		<div class="container">
-<% for post in @getCollection("posts").toJSON(): %>
+<% for post in @getCollection("landing").toJSON(): %>
 			<div class="row ">
 				<div class="blog-wrapper clearfix">
 					<div class="code col-lg-8 col-sm-6">
