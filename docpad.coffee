@@ -36,7 +36,7 @@ docpadConfig = {
         archive: (database) ->
             database.findAllLive({archived:true}, [date: -1])
         landing: (database) ->
-            database.findAllLive({langing:true}, [date: -1])
+            database.findAllLive({landing:true}, [date: -1])
             
     plugins:
         cleanurls:

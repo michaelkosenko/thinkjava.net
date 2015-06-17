@@ -5,7 +5,7 @@ url: /announcement2
 layout: post
 date: 2015-05-09
 postimage: /images/2015/05/main.png
-langing: true
+archived: true
 ---
 
 Новые технологии и методологии, возможности мира Java и магия NoSQL, отладка Java-приложения с помощью инструментария JDK и подключении к JVM “на лету”  — все это и многое другое ждет вас на второй конференции ThinkJava от NIX Solutions. 
