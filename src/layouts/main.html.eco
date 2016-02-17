@@ -58,7 +58,7 @@
 								<a <%-if @document.isHome then 'class="active"' else ''%> href="<%-@site.url%>/">Главная</a>
 							</li>
 							<li>
-								<a href="http://www.meetup.com/thinkjava/events/211924932/">Регистрация</a>
+								<a href="http://www.meetup.com/thinkjava/events/228921927/">Регистрация</a>
 							</li>
 							<li>
 								<a <%-if @document.isIdeas then 'class="active"' else ''%> href="<%-@site.url%>/ideas/">Идеи и планы</a>

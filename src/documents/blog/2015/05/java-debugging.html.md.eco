@@ -5,7 +5,7 @@ url: /java-debugging
 layout: post
 date: 2015-06-08 09:34
 postimage: /images/2015/05/java-debugging.jpg
-landing: true
+archived: true
 ---
 
 Как правило, Java-разработчики производят отладку уже готовыми средствами, предоставленными их IDE, или же используют популярные библиотеки и утилиты (YourKit, jProfiler, JavaMelody). Но мало кто знает, что большинство проблем можно решить c помощью инструментария, который предоставляется вместе с JDK! 
