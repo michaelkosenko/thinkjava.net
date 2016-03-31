@@ -5,7 +5,8 @@ url: /announcement3
 layout: post
 date: 2016-02-18
 postimage: /images/2016/02/main.png
-landing: true
+landing: false
+archived: true
 ---
 
 Третью встречу ThinkJava мы полностью посвящаем теме микросервисов: что это такое, 
