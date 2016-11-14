@@ -35,8 +35,12 @@ docpadConfig = {
             database.findAllLive({type:$has:'blog'}, [date: -1])
         archive: (database) ->
             database.findAllLive({archived:true}, [date: -1])
+        landingArchive: (database) ->
+            database.findAllLive({archived:true, landing:true}, [date: -1])
         landing: (database) ->
             database.findAllLive({landing:true}, [date: -1])
+        annonce: (database) ->
+            database.findAllLive({annonce:true}, [annonceDate: -1])
             
     plugins:
         cleanurls:
@@ -51,6 +55,9 @@ docpadConfig = {
             formats: [
                 {raw: 'date', format: 'DD.MM.YYYY', formatted: 'humanDate'}
                 {raw: 'date', format: 'DD-MM-YYYY', formatted: 'computerDate'}
+                {raw: 'annonceDate', format: 'YYYY-MM-DD[T]HH:mm:ss.sss[Z]', formatted: 'annonceDateStr'}
+                {raw: 'annonceDate', format: 'YYYY-MM-DD HH:mm', formatted: 'annonceDateTime'}                
+                {raw: 'annonceDate', format: 'D MMMM', formatted: 'annonceDateShort'}                
             ]
 
         sitemap:
@@ -62,7 +69,7 @@ docpadConfig = {
         static:
             templateData:
                 site:
-                    url: "http://thinkjava.net"
+                    url: "http://thinkjava.io"
         development:
             templateData:
                 site:
@@ -70,3 +77,4 @@ docpadConfig = {
 }
 
 module.exports = docpadConfig
+

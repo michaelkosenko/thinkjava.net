@@ -1,0 +1,24 @@
+---
+type: blog
+title: "Микросервисы и их друзья"
+url: /microservices-and-friends
+layout: post
+date: 2016-04-01 8:10
+postimage: /images/2016/04/Duke3.png
+landing: true
+archived: false
+---
+
+Что же такое эти микросервисы о которых все говорят? Какие у них преимущества над традиционным подходом в разработке приложений? 
+Мы постарались пролить свет на эти вопросы, а также рассказать о взаимодействиях между сервисами, проблемах и типовых задачах 
+которые при этом возникают. Так же рассказали о некоторых уже готовых решениях, которые осталось только правильно применить. 
+
+<!-- more -->
+
+**Докладчики:** Иван Криворотенко и Влад Стусь (Nix Solutions)
+
+**Исходники:** <https://bitbucket.org/ikryvorotenko/microservises-demo>
+
+<iframe width="960" height="720" src="https://www.youtube.com/embed/H6gEutKdyNA" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://docs.google.com/presentation/d/1wgS2Zo6ZXv0hON_UNrySUIbgEJDKaBxTtRTtc-MTrn0/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

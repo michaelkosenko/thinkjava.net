@@ -3,27 +3,155 @@ layout: main
 isHome: true
 ---
 
-		<div class="container">
-<% for post in @getCollection("landing").toJSON(): %>
-			<div class="row ">
-				<div class="blog-wrapper clearfix">
-					<div class="code col-lg-8 col-sm-6">
-						<div class="big-img-wrap">
-							<img src="<%- @site.url + post.postimage%>" width="100%">
-						</div>
-					</div><!-- col-lg-8 -->
-					<div class="blog col-lg-4 col-sm-6">
-						<h2><%- post.title%></h2>
-						<p>
-							<%- @getCuttedContent(String(post.contentRenderedWithoutLayouts))%>
-						</p>
-						<% if @hasReadMore(String(post.contentRenderedWithoutLayouts)): %>
-						<a class="btn-read" href="<%=@site.url + post.url%>">
-							Читать дальше
-						</a><!-- btn-read -->
-						<% end %>
-					</div><!-- col-lg-4 -->
-				</div><!-- blog-wrapper -->
-			</div><!-- row -->
+
+
+<% post = @getCollection("annonce").toJSON()[0]%>
+<% if new Date().toISOString().localeCompare(post.annonceDateStr) < 0 :%>
+<div class="hero isAnchorsExist">
+    <div class="video-wrapper">
+        <video autoplay="" loop="" poster="<%=@site.url%>/images/poster.jpg">
+            <source src="<%=@site.url%>/videos/video-very-compressed.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="hero-content">
+        <div class="hero-content-wrapper centered">
+            <p class="above-title"><%=post.annonceDateShort%>, Харьков</p>
+            <h1><strong><%=post.title%></strong><!--<strong>Thinkjava</strong> <span>Meetup <strong>#4</strong></span>--></h1>
+    <script>
+        /*
+        format "day month year hh:mm"
+        It needs to display timer inside header
+        */
+        var eventDate = "<%=post.annonceDateTime%>";
+    </script>            
+            <div class="time-wrapper">
+                <div class="time-window time-days"><p><span></span>д</p></div>
+                <div class="time-window time-hours"><p><span></span>ч</p></div>
+                <div class="time-window time-minutes"><p><span></span>м</p></div>
+                <div class="time-window time-seconds"><p><span></span>с</p></div>
+            </div>
+            <a class="btn red" href="<%=@site.url%><%=post.url%>">Узнать больше</a>
+        </div>
+    </div>
+</div>
+
+<% else: %>
+<div class="hero">
+    <div class="video-wrapper">
+        <video autoplay="" loop="" poster="<%=@site.url%>/images/poster.jpg">
+            <source src="<%=@site.url%>/videos/video-very-compressed.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="hero-content">
+        <div class="hero-content-wrapper centered">
+            <h1>Kharkiv open<br /> <strong>Java</strong>-Community</h1>
+            <a class="btn red" href="https://www.youtube.com/user/thinkjavakharkiv">Больше видео</a>
+        </div>
+    </div>
+</div>
+
 <% end %>
-		</div><!-- container -->
+
+
+
+<div class="about container centered" id="about">
+    <h2>О нас</h2>
+    <p>Мы собираем джавистов Харькова (и не только), чтобы обсудить актуальные темы за чашкой чая, поделиться ценным опытом с коллегами и вместе найти решение сложных проблем. Следи за нами в соц. сетях и будь в курсе событий.</p>
+    <ul class="socials">
+        <li class="facebook">
+            <a href="https://www.facebook.com/thinkjavaKharkiv" target="_blank">
+                <i class="icon-fb"></i>
+            </a>
+        </li>
+        <li class="vk">
+            <a href="https://vk.com/thinkjava" target="_blank">
+                <i class="icon-vk"></i>
+            </a>
+        </li>
+        <li class="twitter">
+            <a href="https://twitter.com/Think_Java" target="_blank">
+                <i class="icon-twitter"></i>
+            </a>
+        </li>
+        <li class="gplus">
+            <a href="https://plus.google.com/116870200058856686282/posts" target="_blank">
+                <i class="icon-gplus"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="gallery clearfix">
+
+    <div class="one-third">
+        <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img1.jpg">
+            <img src="images/img1.jpg" alt="" />
+        </a>
+    </div>
+
+    <div class="one-third">
+        <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img2.jpg">
+            <img src="images/img2.jpg" alt="" />
+        </a>
+    </div>
+
+    <div class="one-third pull-right">
+        <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img3.jpg">
+            <img src="images/img3.jpg" alt="" />
+        </a>
+    </div>
+
+    <div class="two-thirds">
+        <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img4.jpg">
+            <img src="images/img4.jpg" alt="" />
+        </a>
+    </div>
+
+    <div class="half">
+        <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img5.jpg">
+            <img src="images/img5.jpg" alt="" />
+        </a>
+    </div>
+
+    <div class="half">
+        <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img6.jpg">
+            <img src="images/img6.jpg" alt="" />
+        </a>
+    </div>
+
+</div>
+
+<div class="join container centered" id="join">
+    <h2>Присоединяйся к нам</h2>
+    <p>
+        Не знаешь чем занять свой пятничный вечер? Прокачай себя в Java!
+        Интересные доклады, живое общение с Java-экспертами, кофе-брейки с печеньками,
+        подарки и многое другое.
+    </p>
+    <a href="http://www.meetup.com/thinkjava/" class="btn">Присоединиться</a>
+</div>
+
+<div class="grey-block clearfix" id="archive">
+    <div class="archives container">
+
+        <h2>Архив</h2>
+
+        <div class="archives-holder">
+<% for post in @getCollection("landingArchive").toJSON()[0..2]: %>
+            <div class="archive-wrapper">
+
+                <a class="archive-excerpt" href="<%=@site.url + post.url%>">
+                    <img src="<%- @site.url + post.postimage%>" />
+                    <span class="title"><%=post.title%></span>
+                    <span class="date"><%=post.humanDate%></span>
+                </a>
+
+                <p>
+                    <%- @getCuttedContent(String(post.contentRenderedWithoutLayouts))%>
+                </p>
+                <a class="read-more" href="<%=@site.url + post.url%>">Читать дальше</a>
+            </div>
+<% end %>
+        </div>
+    </div>
+</div>
