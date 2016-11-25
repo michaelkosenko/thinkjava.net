@@ -69,7 +69,7 @@ docpadConfig = {
         static:
             templateData:
                 site:
-                    url: "http://thinkjava.io"
+                    url: "https://thinkjava.io"
         development:
             templateData:
                 site:

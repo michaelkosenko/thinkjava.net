@@ -85,37 +85,37 @@ isHome: true
 
     <div class="one-third">
         <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img1.jpg">
-            <img src="images/img1.jpg" alt="" />
+            <img src="<%=@site.url%>/images/img1.jpg" alt="" />
         </a>
     </div>
 
     <div class="one-third">
         <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img2.jpg">
-            <img src="images/img2.jpg" alt="" />
+            <img src="<%=@site.url%>/images/img2.jpg" alt="" />
         </a>
     </div>
 
     <div class="one-third pull-right">
         <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img3.jpg">
-            <img src="images/img3.jpg" alt="" />
+            <img src="<%=@site.url%>/images/img3.jpg" alt="" />
         </a>
     </div>
 
     <div class="two-thirds">
         <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img4.jpg">
-            <img src="images/img4.jpg" alt="" />
+            <img src="<%=@site.url%>/images/img4.jpg" alt="" />
         </a>
     </div>
 
     <div class="half">
         <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img5.jpg">
-            <img src="images/img5.jpg" alt="" />
+            <img src="<%=@site.url%>/images/img5.jpg" alt="" />
         </a>
     </div>
 
     <div class="half">
         <a class="fancybox" rel="gallery" href="<%=@site.url%>/images/img6.jpg">
-            <img src="images/img6.jpg" alt="" />
+            <img src="<%=@site.url%>/images/img6.jpg" alt="" />
         </a>
     </div>
 
