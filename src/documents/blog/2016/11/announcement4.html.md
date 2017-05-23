@@ -4,10 +4,10 @@ title: "ThinkJava #4"
 description: "Приглашаем на очередную встречу ThinkJava"
 url: /announcement4
 layout: post
-date: 2015-11-10
+date: 2016-11-10
 postimage: /images/2015/05/main.png
 annonce: true
-annonceDate: 2016-11-25 19:00
+annonceDate: "11/25/2016 19:00:00 GMT+0200"
 ---
 Спикеры четвертой встречи нашего ThinkJava-комьюнити переплыли моря и океаны, 
 чтобы побывать на SpringOne Platform в Лас-Вегасе, и теперь готовы поделиться 

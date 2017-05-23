@@ -40,7 +40,7 @@ docpadConfig = {
         landing: (database) ->
             database.findAllLive({landing:true}, [date: -1])
         annonce: (database) ->
-            database.findAllLive({annonce:true}, [annonceDate: -1])
+            database.findAllLive({annonce:true}, [date: -1])
             
     plugins:
         cleanurls:
