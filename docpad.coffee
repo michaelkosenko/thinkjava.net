@@ -56,7 +56,7 @@ docpadConfig = {
                 {raw: 'date', format: 'DD.MM.YYYY', formatted: 'humanDate'}
                 {raw: 'date', format: 'DD-MM-YYYY', formatted: 'computerDate'}
                 {raw: 'annonceDate', format: 'YYYY-MM-DD[T]HH:mm:ss.sss[Z]', formatted: 'annonceDateStr'}
-                {raw: 'annonceDate', format: 'YYYY-MM-DD HH:mm', formatted: 'annonceDateTime'}                
+                {raw: 'annonceDate', format: 'YYYY/MM/DD HH:mm', formatted: 'annonceDateTime'}                
                 {raw: 'annonceDate', format: 'D MMMM', formatted: 'annonceDateShort'}                
             ]
 
