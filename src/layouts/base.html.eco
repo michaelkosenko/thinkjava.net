@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="<%= @document.title %>" />
     <meta name="description" content="<%= @document.description %>" />
-    <title><%= @document.title %></title>
+    <title>Think Java</title>
     <link rel="apple-touch-icon" sizes="57x57" href="<%=@site.url%>/images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<%=@site.url%>/images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="<%=@site.url%>/images/favicon/apple-icon-72x72.png">
@@ -58,15 +58,19 @@
                 <div class="footer-block">
                     <h3>Другие сообщества</h3>
                     <ul class="communities">
-                        <li>
+                        <li class="communities-wp">
                             <a href="https://wp.org.ua/" target="_blank"><img src="<%=@site.url%>/images/WP-logo.svg" /></a>
                         </li>
-                        <li>
+                        <li class="communities-php">
                             <a href="https://thinkphp.com.ua/" target="_blank"><img src="<%=@site.url%>/images/think-php.svg" /></a>
                         </li>
-                        <li>
+                        <li class="communities-net">
                             <a href="https://sync.net.ua/" target="_blank"><img src="<%=@site.url%>/images/sync-net.svg" /></a>
                         </li>
+                        <li class="communities-think">
+                            <a href="№" target="_blank"><img src="<%=@site.url%>/images/i-Think.svg" /></a>
+                        </li>
+                        
                     </ul>
                 </div>
                 <div class="footer-block">
